@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+<link href="style/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<title>Learn Android Complete! - Advanced Android Development - Lesson 2
+</title>
+<link href="style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="style/css/light.css" media="all" rel="stylesheet" type="text/css" />
+<link href="style/css/media-queries.css" media="all" rel="stylesheet" type="text/css" />
+<link href="style/type/titillium.css" media="all" rel="stylesheet" type="text/css" />
+<!--[if IE 8]>
+<link href="style/css/ie8.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]--><!--[if IE 9]>
+<link href="style/css/ie9.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script src="style/js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="style/js/jquery.quicksand.js" type="text/javascript"></script>
+<script src="style/js/jquery.easing.js" type="text/javascript"></script>
+<script src="style/js/mosaic.1.0.1.min.js" type="text/javascript"></script>
+<script src="style/js/jquery.easytabs.min.js" type="text/javascript"></script>
+<script src="style/js/jquery.jcarousel.min.js" type="text/javascript"></script>
+<script src="style/js/selectnav.js" type="text/javascript"></script>
+</head>
+
+<body id="top">
+
+<!-- Begin Wrapper -->
+<div id="wrapper">
+	<!-- Begin Header -->
+	<div id="header">
+		<div id="logo">
+			<h1><a href="index.html">Android Complete! - Tablets, Monetizing, and Management</a></h1>
+		</div>
+		<ul id="menu">
+			<li><a href="index.html">Home</a> </li>
+			<li><a href="lesson1.html">Lesson 1</a> </li>
+			<li><a href="lesson2.html">Lesson 2</a> </li>
+			<li><a href="lesson3.html">Lesson 3</a> </li>
+			<li><a href="lesson4.html">Lesson 4</a> </li>
+		</ul>
+	</div>
+	<!-- End Header -->
+	<!-- Begin Lesson # 1 Section -->
+	<div id="lesson1" class="news-page borderline">
+		<div class="title">
+			<h2>Lesson 2</h2>
+			<div class="gototop">
+				<a class="scrolltop" href="#top" title="Go to Top"></a></div>
+		</div>
+		<!-- Begin Lesson # 1 Container -->
+		<div id="tab-buttons-container" class="tab-container">
+			<ul id="carousel" class="etabs">
+				<li class="tab"><a href="#l1post-1">Lesson 2</a> </li>
+				<li class="tab"><a href="#l1post-2">2.01 - Monetizing Android Applications</a>
+				</li>
+			</ul>
+			<!-- Begin Entries -->
+			<div class="panel-container">
+				<div id="l1post-1" class="tab-buttons-panel">
+					<h2>Lesson 2</h2>
+					<p>This lesson reviews the various means you can monetize 
+					your Android application.&nbsp; We also look at AdMob Banner 
+					advertising, and how that can be integrated with your 
+					application.</p>
+					<p>Legend:<br>
+					<img alt="" class="image-margin" height="18" src="style/images/presentation.png" style="float: left" width="22">&nbsp; 
+					- Presentations<br>
+					<img alt="" class="image-margin" height="18" src="style/images/video.png" style="float: left" width="22">&nbsp; 
+					- VIdeos<br>
+					<img alt="" class="image-margin" height="18" src="style/images/exercise.png" style="float: left" width="22">&nbsp; 
+					- PDF Exercise Files<br>
+					<img alt="" class="image-margin" height="18" src="style/images/source.png" style="float: left" width="22">&nbsp; 
+					- Source Project / Resource Files</p>
+				</div>
+				<div id="l1post-2" class="tab-buttons-panel">
+					<h2>2.01 - Monetizing Android Applications</h2>
+					<p>
+					<img alt="" class="image-margin" height="18" src="style/images/presentation.png" style="float: left" width="22">&nbsp; 
+					Monetizing Android Applications -
+					<a href="Lesson-02/Presentations/Lesson-02.01-Monetizing/index.html" target="_blank">Narrated</a> /
+					<a href="Lesson-02/Presentations/Lesson-02.01-Monetizing/Lesson-02.01-Monetizing.pdf" target="_blank">PDF</a></p>
+					<p>
+					<img alt="" class="image-margin" height="18" src="style/images/video.png" style="float: left" width="22">&nbsp;
+					<a href="Lesson-02/Video/01-Banner-Ads.mp4" target="_blank">
+					Banner Advertisements with AdMob</a></p>
+					<p>
+					<img alt="" class="image-margin" height="18" src="style/images/exercise.png" style="float: left" width="22">&nbsp;
+					<a href="Lesson-02/Exercise/01-Integrating-AdMob.pdf" target="_blank">
+					Integrating AdMob</a></p>
+					<p>
+					<img alt="" class="image-margin" height="18" src="style/images/source.png" style="float: left" width="22">&nbsp;
+					<a href="Lesson-02/Source/TMM-Banner-Ads.zip" target="_blank">
+					AdMob Integration Example (TMM-Banner-Ads.zip)</a></p>
+				</div>
+				
+			</div>
+			<!-- End Entries --></div>
+		<!-- End News Container --></div>
+	<!-- End Lesson # 1 Section -->
+	<!-- End News Container --></div>
+<!-- End Lesson # 1 Section -->
+<!-- End Wrapper -->
+<script type="text/javascript">
+                $('#tab-buttons-container').easytabs({
+                    updateHash: false
+                });
+
+                $('#tab-buttons-container2').easytabs({
+                    updateHash: false
+                });
+           
+                var $tabContainer = $('#tab-buttons-container'),
+                $tabs = $tabContainer.data('easytabs').tabs,
+                $tabPanels = $(".tab-buttons-panel")
+                totalSize = $tabPanels.length;
+
+                $tabPanels.each(function (i) {
+                    if (i != 0) {
+                        prev = i - 1;
+                        $(this).prepend("<a href='#' class='prev-tab btn success' rel='" + prev + "'>&laquo; Prev Page</a>");
+                    }
+                    else {
+                        $(this).prepend("<span class='prev-tab btn'>&laquo; Prev Page</span>");
+                    }
+                    if (i + 1 != totalSize) {
+                        next = i + 1;
+                        $(this).prepend("<a href='#' class='next-tab btn success' rel='" + next + "'>Next Page &raquo</a>");
+                    }
+                    else {
+                        $(this).prepend("<span class='next-tab btn'>Next Page &raquo</span>");
+                    }
+                });
+
+                $('.next-tab, .prev-tab').click(function () {
+                    var i = parseInt($(this).attr('rel'));
+                    var tabSelector = $tabs.children('a:eq(' + i + ')').attr('href');
+                    $tabContainer.easytabs('select', tabSelector);
+                    return false;
+                });
+            </script>
+<script src="style/js/custom.js" type="text/javascript"></script>
+</a>
+
+</body>
+
+</html>
